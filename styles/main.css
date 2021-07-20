@@ -34,6 +34,7 @@ main {
 }
 
 footer {
+    color: rgba(0,0,0,.54);
     background-color: #f2f2f2;
     height: 10vh;
 }
@@ -92,7 +93,6 @@ footer {
 }
 
 #footer-links {
-    color: rgba(0,0,0,.54);
     display: flex;
     align-items: center;
     justify-content: space-between;
