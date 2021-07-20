@@ -60,6 +60,10 @@ footer {
     padding: 10px 25px;
     border-radius: 5px;
 }
+#sign-in:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
 
 #grid-icon {
     width: 16px;
