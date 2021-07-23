@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     height: 100%;
     display: flex;
@@ -8,15 +9,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+
 nav {
     display: flex;
-    flex: 1;
     justify-content: space-between;
     margin-top: 10px;
     padding: 5px 15px;
     height: auto;
 }
-
 
 a, a:focus, a:active {
     color: inherit;
@@ -25,18 +25,20 @@ a, a:focus, a:active {
 a:hover {
     text-decoration: underline;
 }
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex: 1;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     color: rgba(0,0,0,.54);
     background-color: #f2f2f2;
-    height: 10vh;
 }
 
 .nav-link-container {
@@ -50,6 +52,17 @@ footer {
 .right-nav-links {
     font-size: 13px;
 }
+#left-footer-links {
+    display: flex;
+    margin-left: 15px;
+}
+
+
+#right-footer-links {
+    display: flex;
+    margin-right
+}
+    
 
 #nav-first-link {
     margin-left: 15px;
@@ -61,6 +74,7 @@ footer {
     padding: 10px 25px;
     border-radius: 5px;
 }
+
 #sign-in:hover {
     text-decoration: none;
     opacity: 0.9;
@@ -80,15 +94,16 @@ footer {
     width: 40px;
     margin: 0 10px;
 }
+
 #grid-icon-link:hover {
     background-color: rgba(60,64,67,0.08);
     border-radius: 50%;
 }
+
 #country {
-    /* padding-bottom: 25px; */
+    padding: 15px 30px;
     display: flex;
     align-items: center;
-    height:50%;
     border-bottom: 1px solid rgba(148, 148, 148, 0.3);
 }
 
@@ -96,37 +111,30 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:50%;
-}
-#google-logo {
-    margin-top: -150px;
-}
-@media (max-width: 500px) {
-    #google-logo {
-        width: 200px;
-        height: auto;
-    }
-    #search-bar {
-        width: 80vw;
-        padding: 10px 20px;
-        border: 1px solid #dfe1e5;
-        border-radius: 25px;
-    }
-}
-@media (min-width: 501px) {
-    #google-logo {
-        width: 275px;
-        height: auto;
-    }
-    #search-bar {
-        width: 80vw;
-        max-width: 600px;
-        padding: 15px 20px;
-        margin: 20px 0;
-        border: 1px solid #dfe1e5;
-        border-radius: 25px;
-    }
-    
-    
+    flex-wrap: wrap;
 }
 
+#footer-links a {
+    padding: 15px 15px;
+}
+
+#google-logo {
+    margin-top: -150px;
+    width: 275px;
+    height: auto;
+}
+
+#search-bar {
+    width: 80vw;
+    max-width: 550px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    #footer-links {
+        justify-content: space-evenly;
+    }   
+}
