@@ -55,7 +55,7 @@ footer {
 .search-button {
     color: #3c4043;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid transparent;
     background-color: #f8f9fa;
     border-radius: 4px;
 }
@@ -103,6 +103,13 @@ footer {
     opacity: 0.9;
 }
 
+#search-icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    color: #9aa0a6;
+}
+
 #grid-icon {
     color: #5f6368;
     width: 24px;
@@ -147,13 +154,30 @@ footer {
 }
 
 #search-bar {
+    display: flex;
+    align-items: center;
     width: 80vw;
     max-width: 550px;
     padding: 15px 20px;
     margin-top: 30px;
     border: 1px solid #dfe1e5;
     border-radius: 25px;
+}
 
+#search-bar:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#search-input {
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    flex: 1;
+}
+
+#search-input:focus {
+    border: none;
+    outline: none;
 }
 
 #search-button-container {
