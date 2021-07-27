@@ -52,11 +52,24 @@ footer {
 .right-nav-links {
     font-size: 13px;
 }
+.search-button {
+    color: #3c4043;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+.search-button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
 
 #alt-language-text {
     margin-top: 30px;
 }
-
+#language-link {
+    color: #0000EE;
+}
 #main-content {
     display: flex;
     flex-direction: column;
