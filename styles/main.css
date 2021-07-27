@@ -29,7 +29,7 @@ a:hover {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex: 1;
 }
@@ -52,18 +52,28 @@ footer {
 .right-nav-links {
     font-size: 13px;
 }
+
+#alt-language-text {
+    margin-top: 30px;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
 #left-footer-links {
     display: flex;
     margin-left: 15px;
 }
 
-
 #right-footer-links {
     display: flex;
-    margin-right
+    margin-right: 15px;
 }
     
-
 #nav-first-link {
     margin-left: 15px;
 }
@@ -119,7 +129,6 @@ footer {
 }
 
 #google-logo {
-    margin-top: -150px;
     width: 275px;
     height: auto;
 }
@@ -128,9 +137,14 @@ footer {
     width: 80vw;
     max-width: 550px;
     padding: 15px 20px;
-    margin: 20px 0;
+    margin-top: 30px;
     border: 1px solid #dfe1e5;
     border-radius: 25px;
+
+}
+
+#search-button-container {
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1200px) {
